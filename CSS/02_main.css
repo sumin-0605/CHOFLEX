@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  font-family: sans-serif;
+}
+
+/* 고정 헤더 구조 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* ✅ 고정 높이 */
+  z-index: 9999;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  padding: 1rem;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.menu li a:hover {
+  color: gray;
+}
+
+.logo {
+  height: 5rem;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 10rem;
+}
+
+.avatar img {
+  width: 30px;
+}
+
+main {
+  padding-top: 80px; /* ✅ 헤더 높이만큼 공간 확보 */
+}
+
+/* 나머지 banner, swiper 등 그대로 유지 */
+.banner {
+  background-image: url("../img/banner.png");
+  background-size: cover;
+  background-position: center;
+  height: 448px;
+  color: white;
+}
+.banner_contents {
+  margin-left: 30px;
+  padding-top: 150px;
+  height: 190px;
+}
+
+.banner_title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+
+.banner_btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner_btn button {
+  width: 60px;
+  height: 30px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+
+.banner_btn button:hover {
+  background-color: rgb(171, 163, 163);
+  cursor: pointer;
+}
+
+.banner_morebtn {
+  background-color: #595959;
+  color: white;
+  margin-left: 5px;
+}
+
+.banner_description {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.row {
+  color: white;
+}
+
+.row h2 {
+  margin-left: 25px;
+  margin-top: 3rem;
+  color: white;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  width: auto;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.poster-img {
+  width: 200px;
+  max-height: 340px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 6px;
+  display: block;
+}
+
+.poster-img:hover {
+  transform: scale(1.1);
+}
+
+.mobile-banner {
+  display: none;
+}
+
+/* 👇 모바일 대응 */
+@media (max-width: 768px) {
+  .banner {
+    display: none;
+  }
+
+  .mobile-banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/banner_mob.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .mobile-banner-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    text-align: center;
+  }
+
+  .mobile-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .mobile-desc {
+    font-size: 0.9rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+  }
+
+  .mobile-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .play-btn,
+  .save-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .play-btn {
+    background-color: white;
+    color: black;
+  }
+
+  .save-btn {
+    background-color: #333;
+    color: white;
+  }
+
+.menu li a {
+    font-size: 0.6rem; /* 더 줄여도 되고, 0.5rem도 가능 */
+    padding: 0.2rem;    /* 여백도 살짝 줄여주면 딱 좋아 */
+  }
+
+  .menu li {
+    padding: 0.3rem; /* 글자 주변 패딩도 줄여줘 */
+  }
+
+  .menu ul {
+    gap: 0.5rem; /* 혹시 너무 붙어있으면 살짝 간격도 조절 */
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+  .poster-img {
+    width: 120px;
+    max-height: 200px;
+  }
+  .logo img {
+    width: 6rem;
+  }
+}
