@@ -1,152 +1,311 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>초플릭스</title>
 
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="CSS/02_main.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="nav">
-        <div class="menu">
-          <div class="inner">
-            <div class="logo_top">
-              <div class="logo">
-                <a href="index.html">
-                  <img id="logo" src="img/choflixlogo.png" alt="choflix logo" />
-                </a>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>초플릭스</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="CSS/02_main.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="menu">
+        <div class="inner">
+          <div class="logo_top">
+            <div class="logo">
+              <a href="index.html">
+                <img id="logo" src="img/choflixlogo.png" alt="choflix logo" />
+              </a>
             </div>
           </div>
-          <ul>
-            <li><a href="main.html">Home</a></li>
-            <li><a href="https://www.choeupchurch.co.kr/">choeup church</a></li>
-            <li>
-              <a href="https://www.instagram.com/choeup_church_youngman/">insta</a>
-            </li>
-          </ul>
         </div>
-        <div class="avatar">
-          <a href="index.html">
-            <img id="avatar" src="img/ELIJAH.png" alt="profile icon" />
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="https://www.choeupchurch.co.kr/">choeup church</a></li>
+          <li>
+            <a href="https://www.instagram.com/choeup_church_youngman/">insta</a>
+          </li>
+        </ul>
+      </div>
+      <div class="avatar">
+        <a href="index.html">
+          <img id="avatar" src="img/ELIJAH.png" alt="profile icon" />
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="banner">
+      <div class="banner_contents">
+        <h1 class="banner_title">열왕기상</h1>
+        <h3>예언자와 왕들: 불타는 왕국 연대기</h3>
+        <div class="banner_btn">
+          <a href="https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ki&chap=20">
+            <button>▶︎ 읽기</button>
+          </a>
+          <a href="https://www.youtube.com/watch?v=wHvgzbXpeL0&t=">
+            <button class="banner_morebtn" style="width: 110px">
+              읽을 때 들을 플리
+            </button>
           </a>
         </div>
-      </nav>
-    </header>
+        <p class="banner_description">
+          에피소드 1 &lt;열왕기상 20 - 22&gt; : “예언자는 거짓을 싫어한다”<br /><br />
+          아람 왕 벤하닷이 사마리아를 침공하지만, 이스라엘 왕 아합은 하나님의
+          도우심으로 승리를 거둔다.<br />
+          이후 아합은 벤하닷을 살려주고 동맹을 맺어 하나님의 분노를 사는데...
+        </p>
+      </div>
+    </div>
 
-    <main>
-      <div class="banner">
-        <div class="banner_contents">
-          <h1 class="banner_title">열왕기상</h1>
-          <h3>예언자와 왕들: 불타는 왕국 연대기</h3>
-          <div class="banner_btn">
-            <a href="https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ki&chap=20">
-              <button>▶︎ 읽기</button>
-            </a>
-            <a href="https://www.youtube.com/watch?v=wHvgzbXpeL0&t=">
-              <button class="banner_morebtn" style="width: 110px">
-                읽을 때 들을 플리
-              </button>
-            </a>
-          </div>
-          <p class="banner_description">
-            에피소드 1 &lt;열왕기상 20 - 22&gt; : “예언자는 거짓을 싫어한다”<br /><br />
-            아람 왕 벤하닷이 사마리아를 침공하지만, 이스라엘 왕 아합은 하나님의
-            도우심으로 승리를 거둔다.<br />
-            이후 아합은 벤하닷을 살려주고 동맹을 맺어 하나님의 분노를 사는데...
-          </p>
+    <!-- 모바일 배너 -->
+    <div class="mobile-banner">
+      <div class="mobile-banner-overlay">
+        <h1 class="mobile-title">열왕기상</h1>
+        <p class="mobile-desc">
+          에피소드 1 &lt;열왕기상 20 - 22&gt; <br />
+          “예언자는 거짓을 싫어한다”
+        </p>
+        <div class="mobile-buttons">
+          <a href="https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ki&chap=20">
+            <button class="play-btn">▶ 읽기</button>
+          </a>
+          <a href="https://www.youtube.com/watch?v=wHvgzbXpeL0&t=7147s">
+            <button class="save-btn">읽을 때 들을 플리</button>
+          </a>
         </div>
       </div>
+    </div>
 
-      <!-- 모바일 배너 -->
-      <div class="mobile-banner">
-        <div class="mobile-banner-overlay">
-          <h1 class="mobile-title">열왕기상</h1>
-          <p class="mobile-desc">
-            에피소드 1 &lt;열왕기상 20 - 22&gt; <br />
-            “예언자는 거짓을 싫어한다”
-          </p>
-          <div class="mobile-buttons">
-            <a href="https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book=1ki&chap=20">
-              <button class="play-btn">▶ 읽기</button>
-            </a>
-            <a href="https://www.youtube.com/watch?v=wHvgzbXpeL0&t=7147s">
-              <button class="save-btn">읽을 때 들을 플리</button>
-            </a>
-          </div>
+    <!-- CHOFLIX ORIGINALS -->
+    <div class="row">
+      <h2>CHOFLIX ORIGINALS</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/miji1.png" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/jesus01.jpg" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/miji2.png" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/jesus02.png" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/miji3.png" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/jesus03.jpg" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/miji4.png" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/jesus04.jpg" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/miji5.png" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/miji6.png" class="poster-img" /></div>
         </div>
       </div>
+    </div>
 
-      <!-- CHOFLIX ORIGINALS -->
-      <div class="row">
-        <h2>CHOFLIX ORIGINALS</h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/miji1.png" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/jesus01.jpg" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/miji2.png" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/jesus02.png" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/miji3.png" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/jesus03.jpg" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/miji4.png" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/jesus04.jpg" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/miji5.png" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/miji6.png" class="poster-img" /></div>
-          </div>
+    <!-- TRENDING NOW -->
+    <div class="row">
+      <h2>TRENDING NOW</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/kido_hea1.png" class="poster-img" data-movie="gallery1" /></div>
+          <div class="swiper-slide"><img src="img/kido_jun.jpg" class="poster-img" data-movie="gallery2" /></div>
+          <div class="swiper-slide"><img src="img/cc2.jpg" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/cc1.jpg" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/cc3.jpg" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/cc4.jpg" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/cc5.jpg" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/cc6.jpg" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/cc7.jpg" class="poster-img" /></div>
+          <div class="swiper-slide"><img src="img/cc8.jpg" class="poster-img" data-movie="gallery3" /></div>
         </div>
       </div>
-
-      <!-- TRENDING NOW -->
-      <div class="row">
-        <h2>TRENDING NOW</h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/kido_hea1.png" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/kido_jun.jpg" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/cc2.jpg" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/cc1.jpg" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/cc3.jpg" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/cc4.jpg" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/cc5.jpg" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/cc6.jpg" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/cc7.jpg" class="poster-img" /></div>
-            <div class="swiper-slide"><img src="img/cc8.jpg" class="poster-img" /></div>
-          </div>
-        </div>
+    </div>
+    /<!-- 공통 모달창 -->
+    <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalContentArea"></div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- Swiper Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Swiper Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Swiper 초기화 -->
-    <script>
-      const swipers = document.querySelectorAll(".swiper");
-      swipers.forEach((el) => {
-        new Swiper(el, {
-          slidesPerView: "auto",
-          spaceBetween: 8,
-          freeMode: true,
-          grabCursor: true,
-        });
+  <!-- Swiper 초기화 -->
+  <script>
+    const swipers = document.querySelectorAll(".swiper");
+    swipers.forEach((el) => {
+      new Swiper(el, {
+        slidesPerView: "auto",
+        spaceBetween: 8,
+        freeMode: true,
+        grabCursor: true,
       });
+    });
 
-      // 스크롤 시 헤더 색상 바꾸기
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
+    // 스크롤 시 헤더 색상 바꾸기
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <script>
+    const movieData = {
+      gallery1: {
+        type: "gallery",
+        title: "해원 기도편지",
+        images: [
+          "img/kido_hea1.png",
+          "img/kido_hea2.png",
+        ],
+        description: "기도 많이 부탁드립니다",
+      },
+      gallery2: {
+        type: "gallery",
+        title: "준혁 기도편지",
+        images: [
+          "img/kido_jun.jpg"
+        ],
+        description: "기도 많이 부탁드립니다",
+      },
+      gallery3: {
+        type: "gallery",
+        title: "왜 눌러보셨나요...?",
+        images: [
+          "img/cc8.jpg"
+        ]
+      }
+      ,
+      0: {
+        title: "사무엘하",
+        description: "",
+        img: "img/miji1.png"
+      },
+      1: {
+        title: "패션오브크라이스트",
+        description: "전 세계가 주목한 최고의 화제작 역사상 가장 위대한 희생의 기록!",
+        img: "img/jesus01.jpg"
+      },
+      2: {
+        title: "사무엘상",
+        description: "",
+        img: "img/miji2.png"
+      },
+      3: {
+        title: "십계",
+        description: "하나님의 음성을 듣는 자, 약속의 땅을 향한 위대한 여정이 시작된다!",
+        img: "img/jesus02.png"
+      }
+      ,
+      4: {
+        title: "사무엘하",
+        description: "",
+        img: "img/miji3.png"
+      }
+      ,
+      5: {
+        title: "드롭박스",
+        description: "작은 상자 안에 담긴 형언할 수 없는 생명의 무게! 가장 절실한 사랑이 있는 곳 <드롭박스>",
+        img: "img/jesus03.jpg"
+      }
+      ,
+      6: {
+        title: "사무엘하",
+        description: "",
+        img: "img/miji4.png"
+      }
+      ,
+      7: {
+        title: "바울",
+        description: "성경 역사상 가장 뜨거운 마지막 여정이 시작된다!",
+        img: "img/jesus04.jpg"
+      }
+      ,
+      8: {
+        title: "사무엘하",
+        description: "24명으로 시작된 이야기",
+        img: "img/miji5.png"
+      }
+      ,
+      9: {
+        title: "사무엘하",
+        description: "'주께서는 이미 너에게서 떠나 너의 원수가 되셨다.'",
+        img: "img/miji6.png"
+      }
+    };
+
+    const modal = document.getElementById("movieModal");
+    const modalContentArea = document.getElementById("modalContentArea");
+    const closeBtn = document.querySelector(".close");
+
+    const posters = document.querySelectorAll(".poster-img");
+    posters.forEach((poster, index) => {
+      poster.addEventListener("click", () => {
+        const movieId = poster.dataset.movie || index; // gallery1 또는 숫자
+        const data = movieData[movieId];
+
+        if (!data) return;
+
+        if (data.type === "gallery") {
+          // 🖼️ 갤러리 모드
+          let slides = "";
+          data.images.forEach((imgPath) => {
+            slides += `<div class="swiper-slide"><img src="${imgPath}" style="width:100%; border-radius: 0.5rem;" /></div>`;
+          });
+
+          modalContentArea.innerHTML = `
+          <h2>${data.title}</h2>
+          <div class="swiper gallerySwiper">
+            <div class="swiper-wrapper">
+              ${slides}
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        `;
+          modal.style.display = "block";
+
+          setTimeout(() => {
+            if (window.gallerySwiper) {
+              window.gallerySwiper.destroy(true, true);
+            }
+            window.gallerySwiper = new Swiper(".gallerySwiper", {
+              slidesPerView: 1,
+              spaceBetween: 10,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+            });
+          }, 100);
         } else {
-          header.classList.remove("scrolled");
+          // 📸 일반 모드
+          modalContentArea.innerHTML = `
+          <h2>${data.title}</h2>
+          <img src="${data.img}" alt="${data.title}" style="width:100%; margin-top:1rem; border-radius:0.5rem;" />
+          <p style="margin-top:1rem; line-height:1.5;">${data.description}</p>
+        `;
+          modal.style.display = "block";
         }
       });
-    </script>
-  </body>
+    });
+
+    closeBtn.onclick = () => {
+      modal.style.display = "none";
+    };
+
+    window.onclick = (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
+</body>
+
 </html>
