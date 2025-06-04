@@ -170,6 +170,30 @@ main {
   display: none;
 }
 
+.modal-content::-webkit-scrollbar {
+  width: 8px; /* 스크롤바 두께 */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4); /* 스크롤바 색상 */
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent; /* 트랙은 안 보이게 */
+}
+
+.gallerySwiper {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.gallerySwiper img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+
 /* 👇 모바일 대응 */
 @media (max-width: 768px) {
   .banner {
@@ -202,7 +226,7 @@ main {
   }
 
   .mobile-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
@@ -211,11 +235,12 @@ main {
     font-size: 0.9rem;
     color: #ddd;
     margin-bottom: 1rem;
+    line-height: 2;
   }
 
   .mobile-buttons {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -239,17 +264,22 @@ main {
     color: white;
   }
 
+  .menu {
+    gap: 1rem;
+  }
+
 .menu li a {
-    font-size: 0.6rem; /* 더 줄여도 되고, 0.5rem도 가능 */
-    padding: 0.2rem;    /* 여백도 살짝 줄여주면 딱 좋아 */
+    font-size: 0.9rem; 
+    padding: 0.2rem;   
   }
 
   .menu li {
-    padding: 0.3rem; /* 글자 주변 패딩도 줄여줘 */
+    padding: 0.2rem; 
   }
 
   .menu ul {
-    gap: 0.5rem; /* 혹시 너무 붙어있으면 살짝 간격도 조절 */
+    gap: 0.1rem;
+    width: 14.5rem; /* 혹시 너무 붙어있으면 살짝 간격도 조절 */
   }
 
   .avatar {
@@ -264,6 +294,83 @@ main {
     max-height: 200px;
   }
   .logo img {
-    width: 6rem;
+    width: 7rem;
+    height: 5rem;
+    margin-top: 0.5rem;
+  }
+  .logo {
+    margin-left: -0.7rem;
+  }
+
+  .row h2 {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background-color: #181818;
+  margin: 8% auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 1rem;
+  color: white;
+  animation: popUp 0.3s ease;
+  max-height: 80vh;  /* 화면 높이의 80%까지만! */
+  overflow-y: auto;
+}
+
+@keyframes popUp {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close {
+  float: right;
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+}
+.close:hover {
+  color: white;
+}
+
+/* 테블릿용 (가로 768px 이상) */
+@media screen and (min-width: 768px) {
+  .modal-content {
+    width: 60%;
+    max-width: 600px;
+    font-size: 1.0.5rem;
+    padding: 2rem;
+  }
+}
+
+/* 데스크탑용 (가로 1024px 이상) */
+@media screen and (min-width: 1024px) {
+  .modal-content {
+    width: 40%;
+    max-height: 70vh;
+    max-width: 550px;
+    font-size: 1.1rem;
+    padding: 2rem;
   }
 }
