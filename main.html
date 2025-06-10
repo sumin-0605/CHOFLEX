@@ -374,7 +374,8 @@
   ];
 
   // const today = new Date().toISOString().split("T")[0];
-  const today = "2025-06-9";
+  const today = new Date().toISOString().split("T")[0];
+
   const todayData = bannerData.find(b => b.date === today) || bannerData[0];
 
   // 디바이스 크기 체크
